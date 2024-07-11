@@ -1,0 +1,209 @@
+//single dimension array
+
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        int size;
+        Scanner sc=new Scanner(System.in);
+        size=sc.nextInt();
+        //one dimensional Array
+        int array[]=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            array[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++)
+        {
+            System.out.println(array[i]);
+        }
+        System.out.println(array[3]);
+    }
+}
+
+//using for each loop we print a array
+
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        int size;
+        Scanner sc=new Scanner(System.in);
+        size=sc.nextInt();
+        //one dimensional Array
+        int array[]=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            array[i]=sc.nextInt();
+        }
+        //using for each loop
+        for(int num:array)
+        {
+            System.out.println(num);
+        }
+    }
+}
+
+//print the second largest element in an array(using two for loop)
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int l1=0;
+    int l2=0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>l1)
+        {
+            l2=l1;
+            l1=arr[i];
+        }
+        else if(arr[i]<l1 && arr[i]>l2)
+        {
+            l2=arr[i];
+        }
+    }
+    printf("%d",l2);
+}
+
+//alternate method(using three for loop)
+
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        int size;
+        Scanner sc=new Scanner(System.in);
+        size=sc.nextInt();
+        //one dimensional Array
+        int array[]=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            array[i]=sc.nextInt();
+        }
+        int max=0,max2=0;
+        for(int i=0;i<size;i++)
+        {
+            if(array[i]>max)
+            {
+                max=array[i];
+            }
+        }
+        for(int i=0;i<size;i++)
+        {
+            if(array[i]>max2 && array[i]!=max)
+            {
+                max2=array[i];
+            }
+        }
+        
+        System.out.println("Second largest element in an array is:"+max2);
+    }
+}
+
+//magic matrix
+
+import java.util.*;
+class main
+{
+    public static void main(String[] args)
+    {
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<=0)
+        {
+            System.out.println("Invalid input!.");
+        }
+        else
+        {
+            int arr[][]=new int[n][n];
+            for (int i=0;i<n;i++)
+            {
+                for(int j=0;j<n;j++)
+                {
+                    arr[i][j]=sc.nextInt();
+                }
+            }
+            int sum1=0,sum2=0;
+            for (int i=0;i<n;i++)
+            {
+                for(int j=0;j<n;j++)
+                {
+                    if(i==j)
+                    {
+                        sum1=sum1+arr[i][j];
+                    }
+                }
+            }
+            for (int i=0;i<n;i++)
+            {
+                for(int j=n;j>=0;j--)
+                {
+                    if(i+j== n-1)
+                    {
+                        sum2=sum2+arr[i][j];
+                    }
+                }
+            }
+            if(sum1==sum2)
+            {
+                System.out.println("Magic Matrix");
+            }
+            else
+            {
+                System.out.println("Not a Magic Matrix");
+            }
+        }
+    }
+}
+
+//another method for magic matrix
+
+import java.util.*;
+class main
+{
+    public static void main(String[] args)
+    {
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<=0)
+        {
+            System.out.println("Invalid input!.");
+        }
+        else
+        {
+            int arr[][]=new int[n][n];
+            for (int i=0;i<n;i++)
+            {
+                for(int j=0;j<n;j++)
+                {
+                    arr[i][j]=sc.nextInt();
+                }
+            }
+            int sum1=0,sum2=0;
+            for (int i=0;i<n;i++)
+            {
+                for(int j=0;j<n;j++)
+                {
+                    sum1+=arr[i][i];
+                    sum2+=arr[i][n-i-1];
+                }
+            }
+            if(sum1==sum2)
+            {
+                System.out.println("Magic Matrix");
+            }
+            else
+            {
+                System.out.println("Not a Magic Matrix");
+            }
+        }
+    }
+}
+

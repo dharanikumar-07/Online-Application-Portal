@@ -1,0 +1,20 @@
+----***----***----***
+
+first step:create a database name called college the import the sql file
+
+Faculity Login:
+
+faculity id:it001
+password:12345
+
+Hod Login:
+
+hod id:hodit
+password:hod
+
+Student login:
+
+rollno:20bit001
+password:123456789 (aadhar number is a password of the student)
+
+-----***---***-----***

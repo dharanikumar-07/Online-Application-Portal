@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>CIET</title>
+<link rel="stylesheet" href="css/style.css"/>
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/favicon.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#instagram{
+  color:white;
+  font-size: 34px;
+}
+#facebook{
+  color:white;
+  font-size: 34px;
+}
+#youtube{
+  color:white;
+  font-size: 34px;
+}
+#twitter{
+  color:white;
+  font-size: 34px;
+}
+#youtube:hover{
+    color:#f44336;
+}
+#instagram:hover{
+  color:#f44336;
+}
+#twitter:hover{
+  color:#f44336;
+}
+#facebook:hover{
+  color:#f44336;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+#cufirst{
+      height:430px;
+      background-color: #000;
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+    
+    <section class="main" style="background-image: url(images/hero-bg.png);">
+        
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/logo1.png" width="320px" />
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#homedc">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#aboutde">About</a></li>
+                <li><a href="#contactde">Contact us</a></li>
+                <li><a class="active" href="itmain.html">Login</a></li>
+            </ul>
+        </nav>
+        <section id="homedc">
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <div class="home-text" >
+                
+                <h3 style="color: white; letter-spacing: 3px;">WELCOME TO CIET - AN AUTONOMOUS INSTITUTION</h3>
+                <h1 style="color: white;">Application Portal</h1>
+                <p style="color: white;">The purpose of the application portal is  to apply the leave application and od application
+                    in an online.To apply your application  click apply now </p>
+            <!--login-btn-->
+            <a href="itmain.html" class="main-login" style="border-radius: 5px;">Apply Now</a>
+            </div>
+            <!--img-->
+            <div class="home-img" style="width: 500px;">
+                <img src="images/slider_img.png" width="500px" height="100px;" />
+                <marquee width="100%" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: rgb(0, 0, 0);"><b>The leave application should be divided into two category namely,medical and casual</b></a>
+                    </marquee>
+                    <marquee width="100%" direction="right" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: rgb(0, 0, 0);"><b>The onduty application should be divided into two category namely,internal and external</b></a>
+                    </marquee>
+            </div>
+            
+        </div>
+        
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+</section>
+    <!--services----------------------->
+    <section class="services" id="features">
+        <!--heading----------->
+        <br>
+        <div class="services-heading">
+            <h2>Features</h2>
+        </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Applying for leave</font>
+                <p>You can apply a leave for your  purpose.Where the leave application is divided into two categories namely,casual and medical </p>
+                <!--btn--------->
+                <a href="studentlogin.html">Apply Now</a>
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Applying for onduty</font>
+                <p>You can apply a onduty application her.Where the onduty application is divided into two categories namely,internal and external </p>
+                <!--btn--------->
+                <a href="studentlogin.html">Apply Now</a>
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Check your application status</font>
+                <p>You can check your application status her.To know wheather the apllication is approved ,declined or pending </p>
+                <!--btn--------->
+                <a href="studentlogin.html">Check Now</a>
+            </div>
+            <!--box-1-------->
+            
+        </div>
+        <section id="aboutde" style="background-color:aliceblue;" >
+          <br>
+          <img src="images/About.png" style="height:600px;width:1380px;">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Leave <br>Application</button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Onduty Application</button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Check your Apllication status</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0" style="background-color:aliceblue;color:black;">
+                    <b>User Access:</b><br>
+                          Students: Individuals who need to apply for leave access the portal to submit their leave requests.<br>
+                       
+                    <b>Submission of Leave Requests:</b><br>
+                        Users log in to the portal and fill out a leave request form. This form typically 
+                        includes details such as the type of leave , the duration of the leave,
+                        and any supporting documentation if required.<br>
+
+                    <b>Workflow and Approval:</b> <br>
+                        The portal often incorporates a workflow for leave approval. 
+                        After submission, the leave request is routed to the relevant 
+                        authorities or tutors for approval.
+                        Approvers can review the leave request, check for conflicts,
+                        and decide whether to approve or decline the application.<br>
+                    <b>Communication:</b><br>
+                      The portal facilitates communication between the applicant and the approver.
+                      Notifications and alerts are often sent to both parties to keep them informed
+                      about the status of the leave application.
+                      <br>
+                    <b>Categories:</b><br>
+                      In this application portal,the leave application is divided into two types namely,casual and medical
+                      <br>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0" style="background-color:aliceblue;color:black;">
+                    <b>User Access:</b><br>
+                        Students  who are assigned on-duty tasks access the portal to 
+                        submit their on-duty applications.<br>
+
+                    <b>Submission of On-duty Requests:</b><br>
+
+                       Student log in to the portal and fill out an on-duty request form. This form typically 
+                        includes details such as the nature of the on-duty assignment, the date and time, 
+                       and any other relevant information.<br>
+
+                    <b>Workflow and Approval:</b><br>
+
+                          The portal incorporates a workflow for on-duty assignment approval. After submission, 
+                          the on-duty request is routed to the relevant authorities or tutors for approval.
+                          Approvers review the request, ensuring that it aligns with organizational needs and staffing 
+                          requirements, before deciding whether to approve or decline the on-duty application.<br>
+                    <b>Communication:</b><br>
+
+                           The portal facilitates communication between the applicant and the approver.
+                            Notifications and alerts are often sent to both parties to keep them informed about the
+                             status of the on-duty application.
+                             <br>
+                    <b>Categories:</b><br>
+                      In this application portal,the Onduty application is divided into two types namely,Internal and Casual
+                    </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0" style="background-color:aliceblue;color:black;"> 
+                    <b>Login:</b><br>
+                    -> Student start by logging into the application portal using their credentials,
+                    which may include a rollno and password.<br>
+                    -> Some portals may have additional security measures like two-factor authentication.<br>
+
+                    <b>Application Status Overview:</b><br>
+
+                    -> The portal often has a section in student login as a(check your application status) to displaying the status of submitted
+                     applications. This could include a list of current and past applications along with
+                     their respective statuses (e.g., pending, approved, denied).<br>
+                    ->To view your application status you may enter your rollno and application started date.<br>
+
+                    <b>Application Details:</b><br>
+                      -> Once the user selects an application, they can view detailed information 
+                      about it. This might include the date of submission, the status, 
+                      tutor response,hod response, etc.., and the next steps in the process.<br>
+                     <b>Logout:</b><br>
+
+                      -> After checking the application, users can log out of the portal 
+                      to ensure the security of their account.<br><br>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </section>
+    <section id="contactde">
+        <div id="cufirst">
+          <br>
+          <div style="margin-left: 200px;">
+            <div id="idiv">
+            <img src="images/cietfooter.png">
+          </div><br>
+            <p style="color:white; font-size: 20px;">
+                We are proud of our international and <br>
+                multi-cultural ethos,the way our community <br>
+                collaborates to make a difference.Our<br> 
+                world-renowned curriculum is built on the best.<br>
+            </p>
+            <hr style="color:#9b9a9a;width:400px;border-width: 5px;">
+            <i class="bi bi-instagram" id="instagram" ></i>&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-facebook" id="facebook" ></i>&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-twitter" id="twitter"></i>&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-youtube" id="youtube"></i>&nbsp;&nbsp;&nbsp;
+          </div>
+          <div style="float:right;margin-top:-310px;margin-right: 200px;">
+                <b  style="color:white;">Coimbatore Institute of <br>Engineering and Technology</b><br><br>
+                <p style="color:white"><i class="bi bi-envelope-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;info@cietcbe.edu.in</p>
+                </i><p style="color:white;"><i class="bi bi-geo-alt-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;Narasipuram (P.O), <br>
+                  Thondamuthur(Via), <br>
+                  Vellimalaipattinam,<br>
+                  Coimbatore: 641109,<br>
+                  Tamil Nadu.</p>
+                <p style="color:white;"> <i class="bi bi-telephone-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;+91 422-2970703</p>
+                <p style="color:white;"><i class="bi bi-phone-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;91 9790038605</p>
+                <p style="color:white;"><i class="bi bi-phone-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;+91 9965658180</p>
+                <p style="color:white;"> <i class="bi bi-telephone-fill" style="color:rgb(63, 194, 255);"></i>&nbsp;&nbsp;Mon - Fri 09:00 AM to 04:10 PM</p>
+          </div>
+        </div>
+    </section>
+    <!--footer------------->
+    <footer>
+        <p>Copyright (C) - 2024 | Online Application Portal</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>

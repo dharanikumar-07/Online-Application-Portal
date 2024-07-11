@@ -1,0 +1,180 @@
+//Decaration of string (Static)
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        //create using string literal
+        String input="Java Programming";
+        System.out.println(input);
+        
+        //by new keyword
+        String s=new String("Welcome to Java");
+        System.out.println(s);
+        
+       //character Array
+       char ch[]={'h','e','l','l','o'};
+       String input1=new String(ch);//we have to convert a character array to string
+       System.out.println(input1);
+       
+    }
+}
+
+//Declaration of string(dynamic)
+
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        //create using string literal
+        String input;
+        Scanner sc=new Scanner(System.in);
+        input=sc.nextLine();
+        System.out.println(input);
+       
+    }
+}
+
+//string compare 
+
+-----equals()
+-----==operator
+-----compareto()
+
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //create using string literal
+        String str1="CIET";
+        String str2="CIET";
+        String str3="Ciet";
+        char ch[]={'A','m','y','p','o'};
+        String str4=new String(ch);
+        String str5="SKCET";
+        String str6=new String("CIET");
+        
+        //equals method
+        System.out.println(str1.equals(str2));
+        System.out.println(str1.equals(str6));//we can comapre a string literal to string object  by using equals method
+        System.out.println(str1.equalsIgnoreCase(str3));
+        
+        //==operator
+        System.out.println(str1==str2);
+        System.out.println(str1==str6);//we cannot comapre a string literal to string object by ==operator
+        
+        //compare to method
+        
+        
+        
+       
+    }
+}
+
+//concat a string
+
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //create using string literal
+        String str1="CIET";
+        String str2="CIET";
+       
+       //by + operator
+       System.out.println(str1+str2);  
+    }
+}
+
+//mcq question
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //MCQ question
+        String str1=40+40+"CIET"+40+40;//before ""qutoes it will perform operation after ""quotes it will perform concat
+        System.out.println(str1);
+    }
+}
+output
+80ciet4040
+
+//substring
+
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //substring 
+        String str1="sachintendulkar";
+        System.out.println(str1.substring(6));//print 6 to end of the string
+        System.out.println(str1.substring(0,6));//print 0 to 5 of a given string
+    }
+}
+
+//basic string function
+
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //substring 
+        String str1="sachintendulkar";
+        String str2="   dharani   ";
+        System.out.println(str1.toUpperCase());//convert into uppercase
+        
+        System.out.println(str1.toLowerCase());//convert into lowercase
+        
+        System.out.println(str2.trim());//remove the start and end space
+        
+        System.out.println(str1.startsWith("ac"));//checks the start character return true or false result
+        
+        System.out.println(str1.endsWith("r"));//checks the end character return true or false result
+        
+        System.out.println(str1.charAt(1));//it print the index character
+        
+        System.out.println(str1.length());//it print the length of the string
+    }
+}
+
+output
+SACHINTENDULKAR
+sachintendulkar
+dharani
+false
+true
+a
+15
+
+Typecaste 
+
+typecaste in java is coverting a variable from one type to another two tyes
+---implicit casting (widening conversion)
+---explicit casting (Narrowing conversion)
+
+Implicit conversion 
+->this occurs when the conversion is done automatically by java compiler ,it happens when converting smaller to larger
+byte->short
+short->int
+long->float
+float->double
+
+explicit conversion
+->this occurs when you explicitly(Or)manually convert a larger to smaller 
+->you need to specify the type parathensis ex: (double) a
+
+import java.util.*;
+public class main{
+    public static void main(String[] args) {
+        //type casting-implicit (smaller to larger)->automatically done
+        int a=10;
+        double b=a;
+        System.out.println(a);
+        System.out.println(b);
+        
+        //type casting-explicit (larger to smaller)->manually done
+        double c=100;
+        int d= (int) c;
+        System.out.println(c);
+        System.out.println(d);
+    }
+}
+
+output
+10
+10.0
+100.0
+100
+
